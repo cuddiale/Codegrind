@@ -37,7 +37,3 @@ conto.deposita(1000);
 conto.aggiungiInteressi();
 console.log(conto.getSaldo()); // 1050
 console.log(conto[_calcolaInteressi]()); // TypeError: conto[_calcolaInteressi] is not a function
-Precedente
-Metodi Statici
-Successivo
-Prendere Elementi
