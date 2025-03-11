@@ -1,0 +1,24 @@
+<!-- Disegnare un rettangolo con un gradiente lineare utilizzando il canvas. -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Disegnare un Gradiente</title>
+</head>
+
+<body>
+    <canvas id="mioCanvas" width="400" height="400" style="border:1px solid #000000;"></canvas>
+
+    <script>
+        var canvas = document.getElementById("mioCanvas");
+        var ctx = canvas.getContext("2d");
+        var gradiente = ctx.createLinearGradient(0, 0, 400, 0);
+        gradiente.addColorStop(0, "red");
+        gradiente.addColorStop(1, "yellow");
+        ctx.fillStyle = gradiente;
+        ctx.fillRect(50, 50, 300, 300);
+    </script>
+</body>
+
+</html>

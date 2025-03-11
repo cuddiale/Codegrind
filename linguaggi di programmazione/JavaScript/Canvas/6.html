@@ -1,0 +1,24 @@
+<!-- Disegnare un rettangolo con un bordo utilizzando il canvas. -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Disegnare un Rettangolo con Bordo</title>
+</head>
+
+<body>
+    <canvas id="mioCanvas" width="400" height="400" style="border:1px solid #000000;"></canvas>
+
+    <script>
+        var canvas = document.getElementById("mioCanvas");
+        var ctx = canvas.getContext("2d");
+        ctx.fillStyle = "#00FF00";
+        ctx.fillRect(100, 100, 200, 150);
+        ctx.strokeStyle = "#0000FF";
+        ctx.lineWidth = 5;
+        ctx.strokeRect(100, 100, 200, 150);
+    </script>
+</body>
+
+</html>
