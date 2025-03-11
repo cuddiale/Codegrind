@@ -1,0 +1,21 @@
+<!-- Disegnare un testo utilizzando il canvas. -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Disegnare un Testo</title>
+</head>
+
+<body>
+    <canvas id="mioCanvas" width="400" height="400" style="border:1px solid #000000;"></canvas>
+
+    <script>
+        var canvas = document.getElementById("mioCanvas");
+        var ctx = canvas.getContext("2d");
+        ctx.font = "30px Arial";
+        ctx.fillText("Hello World", 50, 50);
+    </script>
+</body>
+
+</html>

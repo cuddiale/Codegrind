@@ -1,0 +1,22 @@
+<!-- Disegnare una linea utilizzando il canvas. -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Disegnare una Linea</title>
+</head>
+
+<body>
+    <canvas id="mioCanvas" width="400" height="400" style="border:1px solid #000000;"></canvas>
+
+    <script>
+        var canvas = document.getElementById("mioCanvas");
+        var ctx = canvas.getContext("2d");
+        ctx.moveTo(0, 0);
+        ctx.lineTo(400, 400);
+        ctx.stroke();
+    </script>
+</body>
+
+</html>

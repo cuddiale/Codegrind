@@ -1,0 +1,25 @@
+<!-- Disegnare un triangolo utilizzando il canvas. -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Disegnare un Triangolo</title>
+</head>
+
+<body>
+    <canvas id="mioCanvas" width="400" height="400" style="border:1px solid #000000;"></canvas>
+
+    <script>
+        var canvas = document.getElementById("mioCanvas");
+        var ctx = canvas.getContext("2d");
+        ctx.beginPath();
+        ctx.moveTo(200, 50);
+        ctx.lineTo(150, 150);
+        ctx.lineTo(250, 150);
+        ctx.closePath();
+        ctx.stroke();
+    </script>
+</body>
+
+</html>
