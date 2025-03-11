@@ -1,0 +1,24 @@
+// Rimuovere una classe CSS da un elemento `div` al clic di un pulsante.
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Rimuovere una Classe</title>
+    <style>
+      .highlight {
+        background-color: yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="contenitore" class="highlight">Questo è un contenitore</div>
+    <button onclick="rimuoviClasse()">Rimuovi Classe</button>
+
+    <script>
+      function rimuoviClasse() {
+        var div = document.getElementById("contenitore");
+        div.classList.remove("highlight");
+      }
+    </script>
+  </body>
+</html>

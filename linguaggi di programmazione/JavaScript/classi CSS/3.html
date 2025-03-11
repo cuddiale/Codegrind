@@ -1,0 +1,24 @@
+// Alternare una classe CSS su un elemento `div` al clic di un pulsante.
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Toggle di una Classe</title>
+    <style>
+      .highlight {
+        background-color: yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="contenitore">Questo è un contenitore</div>
+    <button onclick="toggleClasse()">Toggle Classe</button>
+
+    <script>
+      function toggleClasse() {
+        var div = document.getElementById("contenitore");
+        div.classList.toggle("highlight");
+      }
+    </script>
+  </body>
+</html>

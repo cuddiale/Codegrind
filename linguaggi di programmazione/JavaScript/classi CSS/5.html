@@ -1,0 +1,27 @@
+// Aggiungere più classi CSS a un elemento `div` al clic di un pulsante.
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Aggiungere Più Classi</title>
+    <style>
+      .highlight {
+        background-color: yellow;
+      }
+      .bold {
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="contenitore">Questo è un contenitore</div>
+    <button onclick="aggiungiClassi()">Aggiungi Classi</button>
+
+    <script>
+      function aggiungiClassi() {
+        var div = document.getElementById("contenitore");
+        div.classList.add("highlight", "bold");
+      }
+    </script>
+  </body>
+</html>

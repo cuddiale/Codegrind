@@ -1,0 +1,31 @@
+// Modificare le classi CSS di un elemento `div` in base a una condizione.
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Modificare Classi Condizionalmente</title>
+    <style>
+      .highlight {
+        background-color: yellow;
+      }
+      .bold {
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="contenitore">Questo è un contenitore</div>
+    <button onclick="modificaClassi()">Modifica Classi</button>
+
+    <script>
+      function modificaClassi() {
+        var div = document.getElementById("contenitore");
+        if (div.textContent.includes("contenitore")) {
+          div.classList.add("highlight", "bold");
+        } else {
+          div.classList.remove("highlight", "bold");
+        }
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,27 @@
+// Rimuovere più classi CSS da un elemento `div` al clic di un pulsante.
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Rimuovere Più Classi</title>
+    <style>
+      .highlight {
+        background-color: yellow;
+      }
+      .bold {
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="contenitore" class="highlight bold">Questo è un contenitore</div>
+    <button onclick="rimuoviClassi()">Rimuovi Classi</button>
+
+    <script>
+      function rimuoviClassi() {
+        var div = document.getElementById("contenitore");
+        div.classList.remove("highlight", "bold");
+      }
+    </script>
+  </body>
+</html>

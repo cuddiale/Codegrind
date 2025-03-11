@@ -1,0 +1,24 @@
+// Aggiungere una classe CSS a un elemento `div` al clic di un pulsante.
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Aggiungere una Classe</title>
+    <style>
+      .highlight {
+        background-color: yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="contenitore">Questo è un contenitore</div>
+    <button onclick="aggiungiClasse()">Aggiungi Classe</button>
+
+    <script>
+      function aggiungiClasse() {
+        var div = document.getElementById("contenitore");
+        div.classList.add("highlight");
+      }
+    </script>
+  </body>
+</html>

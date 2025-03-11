@@ -1,0 +1,28 @@
+// Verificare se un elemento `div` ha una determinata classe CSS e visualizzare il risultato in un alert.
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Verificare la Presenza di una Classe</title>
+    <style>
+      .highlight {
+        background-color: yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="contenitore" class="highlight">Questo è un contenitore</div>
+    <button onclick="verificaClasse()">Verifica Classe</button>
+
+    <script>
+      function verificaClasse() {
+        var div = document.getElementById("contenitore");
+        if (div.classList.contains("highlight")) {
+          alert("La classe 'highlight' è presente.");
+        } else {
+          alert("La classe 'highlight' non è presente.");
+        }
+      }
+    </script>
+  </body>
+</html>
