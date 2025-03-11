@@ -1,0 +1,22 @@
+<!-- Disegnare un rettangolo utilizzando il canvas. -->
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Disegnare un Rettangolo</title>
+</head>
+
+<body>
+    <canvas id="mioCanvas" width="400" height="400" style="border:1px solid #000000;"></canvas>
+
+    <script>
+        var canvas = document.getElementById("mioCanvas");
+        var ctx = canvas.getContext("2d");
+        ctx.fillStyle = "#FF0000";
+        ctx.fillRect(50, 50, 150, 100);
+    </script>
+</body>
+
+</html>
