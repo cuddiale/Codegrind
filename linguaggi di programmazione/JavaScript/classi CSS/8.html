@@ -1,0 +1,32 @@
+<!-- Alternare più classi CSS su un elemento `div` al clic di un pulsante.-->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Alternare Classi Multiple</title>
+    <style>
+        .highlight {
+            background-color: yellow;
+        }
+
+        .bold {
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="contenitore">Questo è un contenitore</div>
+    <button onclick="toggleClassi()">Toggle Classi</button>
+
+    <script>
+        function toggleClassi() {
+            var div = document.getElementById("contenitore");
+            div.classList.toggle("highlight");
+            div.classList.toggle("bold");
+        }
+    </script>
+</body>
+
+</html>
