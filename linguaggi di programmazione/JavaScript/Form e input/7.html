@@ -1,0 +1,39 @@
+<!-- Mostrare o nascondere campi di input basati sulla selezione di un'opzione. -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Mostrare/Nascondere Campi di Input</title>
+</head>
+
+<body>
+    <form id="form7">
+        <select id="selezione" onchange="mostraNascondiCampi()">
+            <option value="none">Seleziona un'opzione</option>
+            <option value="opzione1">Opzione 1</option>
+            <option value="opzione2">Opzione 2</option>
+        </select>
+        <div id="campoOpzione1" style="display:none;">
+            <input type="text" placeholder="Campo Opzione 1" />
+        </div>
+        <div id="campoOpzione2" style="display:none;">
+            <input type="text" placeholder="Campo Opzione 2" />
+        </div>
+    </form>
+
+    <script>
+        function mostraNascondiCampi() {
+            var selezione = document.getElementById("selezione").value;
+            var campoOpzione1 = document.getElementById("campoOpzione1");
+            var campoOpzione2 = document.getElementById("campoOpzione2");
+
+            campoOpzione1.style.display =
+                selezione === "opzione1" ? "block" : "none";
+            campoOpzione2.style.display =
+                selezione === "opzione2" ? "block" : "none";
+        }
+    </script>
+</body>
+
+</html>

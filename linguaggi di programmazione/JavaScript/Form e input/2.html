@@ -1,0 +1,29 @@
+<!-- Mostrare un messaggio di successo dopo che un form è stato inviato correttamente. -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Messaggio di Successo</title>
+</head>
+
+<body>
+    <form id="form2">
+        <input type="text" id="username" placeholder="Username" />
+        <input type="password" id="password" placeholder="Password" />
+        <button type="submit">Login</button>
+    </form>
+    <p id="successo"></p>
+
+    <script>
+        document
+            .getElementById("form2")
+            .addEventListener("submit", function (event) {
+                event.preventDefault();
+                var successo = document.getElementById("successo");
+                successo.textContent = "Login effettuato con successo!";
+            });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,28 @@
+<!-- Aggiungere dinamicamente campi di input a un form al clic di un pulsante. -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Form Dinamico</title>
+</head>
+
+<body>
+    <form id="form6">
+        <div id="campi"></div>
+        <button type="button" onclick="aggiungiCampo()">Aggiungi Campo</button>
+        <button type="submit">Invia</button>
+    </form>
+
+    <script>
+        function aggiungiCampo() {
+            var campi = document.getElementById("campi");
+            var nuovoCampo = document.createElement("input");
+            nuovoCampo.type = "text";
+            nuovoCampo.placeholder = "Campo aggiunto";
+            campi.appendChild(nuovoCampo);
+        }
+    </script>
+</body>
+
+</html>
