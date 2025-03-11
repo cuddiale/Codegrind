@@ -1,0 +1,36 @@
+<!-- Validare che tutti i campi di input di un form siano riempiti prima di inviarlo. -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Validazione di un Form</title>
+</head>
+
+<body>
+    <form id="form1">
+        <input type="text" id="nome" placeholder="Nome" />
+        <input type="text" id="email" placeholder="Email" />
+        <button type="submit">Invia</button>
+    </form>
+    <p id="messaggio"></p>
+
+    <script>
+        document
+            .getElementById("form1")
+            .addEventListener("submit", function (event) {
+                var nome = document.getElementById("nome").value;
+                var email = document.getElementById("email").value;
+                var messaggio = document.getElementById("messaggio");
+
+                if (nome === "" || email === "") {
+                    messaggio.textContent = "Tutti i campi devono essere riempiti.";
+                    event.preventDefault();
+                } else {
+                    messaggio.textContent = "";
+                }
+            });
+    </script>
+</body>
+
+</html>
