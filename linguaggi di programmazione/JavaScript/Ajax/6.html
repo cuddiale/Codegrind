@@ -1,0 +1,37 @@
+<!-- Utilizzare `axios` per eseguire una richiesta POST e inviare dati al server. -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Axios POST</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+
+<body>
+    <button onclick="faiRichiesta()">Fai Richiesta</button>
+    <pre id="risultato"></pre>
+
+    <script>
+        function faiRichiesta() {
+            axios
+                .post("https://jsonplaceholder.typicode.com/posts", {
+                    title: "foo",
+                    body: "bar",
+                    userId: 1,
+                })
+                .then((response) => {
+                    document.getElementById("risultato").textContent = JSON.stringify(
+                        response.data,
+                        null,
+                        2
+                    );
+                })
+                .catch((error) => {
+                    console.error("Errore:", error);
+                });
+        }
+    </script>
+</body>
+
+</html>

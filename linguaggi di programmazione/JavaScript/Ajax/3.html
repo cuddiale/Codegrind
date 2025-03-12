@@ -1,0 +1,28 @@
+<!-- Eseguire una richiesta GET utilizzando la funzione `fetch` e visualizzare i dati ricevuti. -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Fetch GET</title>
+</head>
+
+<body>
+    <button onclick="faiRichiesta()">Fai Richiesta</button>
+    <pre id="risultato"></pre>
+
+    <script>
+        function faiRichiesta() {
+            fetch("https://jsonplaceholder.typicode.com/posts/1")
+                .then((response) => response.json())
+                .then(
+                    (data) =>
+                    (document.getElementById("risultato").textContent =
+                        JSON.stringify(data, null, 2))
+                )
+                .catch((error) => console.error("Errore:", error));
+        }
+    </script>
+</body>
+
+</html>

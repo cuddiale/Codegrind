@@ -1,0 +1,28 @@
+<!-- Eseguire una semplice richiesta GET utilizzando `XMLHttpRequest` e visualizzare i dati ricevuti. -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Richiesta GET Semplice</title>
+</head>
+
+<body>
+    <button onclick="faiRichiesta()">Fai Richiesta</button>
+    <pre id="risultato"></pre>
+
+    <script>
+        function faiRichiesta() {
+            var xhr = new XMLHttpRequest();
+            xhr.open("GET", "https://jsonplaceholder.typicode.com/posts/1", true);
+            xhr.onreadystatechange = function () {
+                if (xhr.readyState === 4 && xhr.status === 200) {
+                    document.getElementById("risultato").textContent = xhr.responseText;
+                }
+            };
+            xhr.send();
+        }
+    </script>
+</body>
+
+</html>

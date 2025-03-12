@@ -1,0 +1,28 @@
+<!-- Utilizzare AJAX per caricare un file di testo e visualizzarne il contenuto. -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Caricamento di un File</title>
+</head>
+
+<body>
+    <button onclick="caricaFile()">Carica File</button>
+    <pre id="contenuto"></pre>
+
+    <script>
+        function caricaFile() {
+            var xhr = new XMLHttpRequest();
+            xhr.open("GET", "file.txt", true);
+            xhr.onreadystatechange = function () {
+                if (xhr.readyState === 4 && xhr.status === 200) {
+                    document.getElementById("contenuto").textContent = xhr.responseText;
+                }
+            };
+            xhr.send();
+        }
+    </script>
+</body>
+
+</html>

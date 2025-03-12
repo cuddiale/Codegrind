@@ -1,0 +1,33 @@
+<!-- Utilizzare AJAX per eseguire una richiesta GET con parametri e visualizzare i dati ricevuti. -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>GET con Parametri</title>
+</head>
+
+<body>
+    <button onclick="faiRichiesta()">Fai Richiesta</button>
+    <pre id="risultato"></pre>
+
+    <script>
+        function faiRichiesta() {
+            var xhr = new XMLHttpRequest();
+            var userId = 1;
+            xhr.open(
+                "GET",
+                "https://jsonplaceholder.typicode.com/posts?userId=" + userId,
+                true
+            );
+            xhr.onreadystatechange = function () {
+                if (xhr.readyState === 4 && xhr.status === 200) {
+                    document.getElementById("risultato").textContent = xhr.responseText;
+                }
+            };
+            xhr.send();
+        }
+    </script>
+</body>
+
+</html>
