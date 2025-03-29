@@ -1,14 +1,15 @@
-// Creare un namespace e definire una funzione all'interno di esso.
+// Creare un namespace annidato e definire una funzione nel namespace interno.
 
 #include <iostream>
 
-namespace MyNamespace {
-    void saluta() {
-        std::cout << "Ciao dal namespace!" << std::endl;
+namespace OuterNamespace {
+    namespace InnerNamespace {
+        void saluta() {
+            std::cout << "Ciao dal namespace interno!" << std::endl;
+        }
     }
 }
 
 int main() {
-    MyNamespace::saluta();
+    OuterNamespace::InnerNamespace::saluta();
     return 0;
-}
