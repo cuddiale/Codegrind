@@ -1,4 +1,4 @@
-// Stabilire una connessione a MySQL ed eliminare un singolo record usando MySQL C API.
+// Stabilire una connessione a MySQL ed eliminare più record usando MySQL C API.
 
 #include <mysql/mysql.h>
 #include <iostream>
@@ -16,11 +16,11 @@ int main() {
         return EXIT_FAILURE;
     }
 
-    const char* query = "DELETE FROM test_table WHERE id = 1";
+    const char* query = "DELETE FROM test_table WHERE status = 'inactive'";
     if (mysql_query(conn, query)) {
         std::cerr << "DELETE failed. Error: " << mysql_error(conn) << std::endl;
     } else {
-        std::cout << "Record eliminato con successo." << std::endl;
+        std::cout << "Record eliminati con successo." << std::endl;
     }
 
     mysql_close(conn);
