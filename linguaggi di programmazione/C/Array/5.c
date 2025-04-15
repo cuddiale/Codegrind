@@ -1,28 +1,23 @@
-// Ricerca di un elemento in un array:
+// Ricerca e conteggio delle occorrenze di un elemento in un array:
 
 #include <stdio.h>
 
 int main() {
-    int numeri[] = {5, 8, 12, 3, 10};
+    int numeri[] = {3, 8, 4, 2, 8, 6, 8};
     int lunghezza = sizeof(numeri) / sizeof(numeri[0]);
     int numeroDaCercare;
-    int trovato = 0;
+    int conteggio = 0;
 
     printf("Inserisci un numero da cercare: ");
     scanf("%d", &numeroDaCercare);
 
     for (int i = 0; i < lunghezza; i++) {
         if (numeri[i] == numeroDaCercare) {
-            trovato = 1;
-            break;
+            conteggio++;
         }
     }
 
-    if (trovato) {
-        printf("Il numero è presente nell'array.\n");
-    } else {
-        printf("Il numero non è presente nell'array.\n");
-    }
+    printf("Il numero %d compare %d volte nell'array.\n", numeroDaCercare, conteggio);
 
     return 0;
 }
