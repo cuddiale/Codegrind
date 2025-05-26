@@ -1,0 +1,25 @@
+<!-- Crea una pagina HTML con un paragrafo. Utilizza un pseudo-elemento CSS per aggiungere uno sfondo colorato al testo del paragrafo. -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Esercizio 7</title>
+    <style>
+        p::before {
+            content: "";
+            display: block;
+            width: 100%;
+            height: 100%;
+            background-color: yellow;
+            position: absolute;
+            z-index: -1;
+        }
+    </style>
+</head>
+
+<body>
+    <p>Questo è un esempio di testo con sfondo colorato</p>
+</body>
+
+</html>

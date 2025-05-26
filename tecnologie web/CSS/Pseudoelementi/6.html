@@ -1,0 +1,25 @@
+<!-- Crea una pagina HTML con un paragrafo. Utilizza un pseudo-elemento CSS per aggiungere una linea verticale di separazione tra il testo del paragrafo. -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Esercizio 6</title>
+    <style>
+        p::after {
+            content: "";
+            display: inline-block;
+            width: 1px;
+            height: 1em;
+            background-color: black;
+            margin-left: 5px;
+            vertical-align: middle;
+        }
+    </style>
+</head>
+
+<body>
+    <p>Testo con una linea verticale di separazione</p>
+</body>
+
+</html>

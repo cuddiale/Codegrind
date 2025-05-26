@@ -1,0 +1,28 @@
+<!-- Crea una pagina HTML con una lista non ordinata contenente diversi elementi. Utilizza un pseudo-elemento CSS per aggiungere delle virgole e un punto esclamativo alla fine della lista. -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Esercizio 8</title>
+    <style>
+        ul::after {
+            content: ", ";
+        }
+
+        li:last-child::after {
+            content: "!";
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li>Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+        <!-- Aggiungi altri elementi <li> qui -->
+    </ul>
+</body>
+
+</html>
