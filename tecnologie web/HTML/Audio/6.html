@@ -1,0 +1,17 @@
+<!-- Aggiungi un controllo per il tempo di riproduzione del file audio. -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Esercizio 6</title>
+</head>
+
+<body>
+    <audio src="path/to/audio.mp3" controls>
+        Il tuo browser non supporta la riproduzione audio.
+    </audio>
+    <input type="range" min="0" max="audio.duration" value="0" oninput="audio.currentTime = this.value" />
+</body>
+
+</html>

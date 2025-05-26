@@ -1,0 +1,17 @@
+<!-- Aggiungi un controllo del volume per il file audio. -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Esercizio 5</title>
+</head>
+
+<body>
+    <audio src="path/to/audio.mp3" controls>
+        Il tuo browser non supporta la riproduzione audio.
+    </audio>
+    <input type="range" min="0" max="1" step="0.1" value="1" oninput="audio.volume = this.value" />
+</body>
+
+</html>
