@@ -1,0 +1,23 @@
+<!-- Crea una pagina HTML con una lista non ordinata contenente tre elementi di lista Usa il combinatore "child" CSS per selezionare solo il primo e il secondo elemento `li` che sono figli diretti dell'elemento `ul`, quindi cambia il colore del testo di questi elementi in rosso. -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Esercizio 10</title>
+    <style>
+        ul>li:nth-child(-n + 2) {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li>Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+    </ul>
+</body>
+
+</html>

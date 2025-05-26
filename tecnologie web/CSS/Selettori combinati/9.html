@@ -1,0 +1,20 @@
+<!-- Crea una pagina HTML con un campo di input di tipo testo e un bottone. Usa il combinatore "fratello" CSS per selezionare solo il bottone che segue immediatamente il campo di input, quindi cambia il colore del testo del bottone in verde. -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Esercizio 9</title>
+    <style>
+        input[type="text"]+button {
+            color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <input type="text" placeholder="Inserisci un testo" />
+    <button>Clicca qui</button>
+</body>
+
+</html>
