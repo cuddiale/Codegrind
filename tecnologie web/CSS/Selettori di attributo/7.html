@@ -1,0 +1,28 @@
+<!-- Crea una pagina HTML con una tabella contenente alcune righe e colonne. Utilizza il selettore di attributo CSS per selezionare solo le celle che hanno l'attributo "data-value" e il valore "important", quindi cambia il colore del testo di queste celle in blu. -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Esercizio 7</title>
+    <style>
+        td[data-value="important"] {
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <tr>
+            <td>Riga 1, Colonna 1</td>
+            <td data-value="important">Riga 1, Colonna 2</td>
+        </tr>
+        <tr>
+            <td>Riga 2, Colonna 1</td>
+            <td>Riga 2, Colonna 2</td>
+        </tr>
+    </table>
+</body>
+
+</html>

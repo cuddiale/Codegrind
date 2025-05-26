@@ -1,0 +1,23 @@
+<!-- Crea una pagina HTML con una lista non ordinata contenente tre elementi di lista. Utilizza il selettore di attributo CSS per selezionare solo gli elementi che hanno l'attributo "class" che contiene la parola "importante", quindi cambia il colore del testo di questi elementi in verde. -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Esercizio 8</title>
+    <style>
+        li[class*="importante"] {
+            color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li class="menu-importante-item">Elemento 1</li>
+        <li>Elemento 2</li>
+        <li class="list-importante-item">Elemento 3</li>
+    </ul>
+</body>
+
+</html>
