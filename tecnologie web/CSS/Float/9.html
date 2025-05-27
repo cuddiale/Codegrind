@@ -1,0 +1,38 @@
+<!-- Crea una pagina HTML con due div all'interno. Usa il CSS per impostare il float del primo div come "left" in modo che il secondo div si posizioni accanto ad esso. Utilizza la proprietà "clear" per evitare che altri elementi si posizionino accanto al secondo div. -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Esercizio 9</title>
+    <style>
+        #left {
+            float: left;
+            width: 100px;
+            height: 100px;
+            background-color: lightpink;
+        }
+
+        #right {
+            float: left;
+            width: 100px;
+            height: 100px;
+            background-color: lightblue;
+        }
+
+        #clear {
+            clear: left;
+            width: 100px;
+            height: 100px;
+            background-color: lightgreen;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="left"></div>
+    <div id="right"></div>
+    <div id="clear"></div>
+</body>
+
+</html>
