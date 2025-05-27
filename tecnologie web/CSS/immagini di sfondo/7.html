@@ -1,0 +1,37 @@
+<!-- Crea una pagina HTML con una sezione divisa in tre colonne (usando tre div). Usa il CSS per impostare un'immagine di sfondo differente per ciascuna colonna e ripetila orizzontalmente. -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Esercizio 7</title>
+    <style>
+        .colonna {
+            height: 200px;
+            width: 30%;
+            float: left;
+            box-sizing: border-box;
+            background-repeat: repeat-x;
+        }
+
+        .colonna-1 {
+            background-image: url("colonna1.jpg");
+        }
+
+        .colonna-2 {
+            background-image: url("colonna2.jpg");
+        }
+
+        .colonna-3 {
+            background-image: url("colonna3.jpg");
+        }
+    </style>
+</head>
+
+<body>
+    <div class="colonna colonna-1"></div>
+    <div class="colonna colonna-2"></div>
+    <div class="colonna colonna-3"></div>
+</body>
+
+</html>

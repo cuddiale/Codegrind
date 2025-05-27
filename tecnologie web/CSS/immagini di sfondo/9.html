@@ -1,0 +1,33 @@
+<!-- Crea una pagina HTML con un div all'interno. Usa il CSS per impostare un'immagine di sfondo nel div e posizionala al centro orizzontalmente e verticalmente. -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Esercizio 9</title>
+    <style>
+        div {
+            background-image: url("sfondo.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 400px;
+            width: 600px;
+            position: relative;
+        }
+
+        img {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <img src="logo.png" alt="Logo" />
+    </div>
+</body>
+
+</html>
