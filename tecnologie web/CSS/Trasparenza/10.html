@@ -1,0 +1,59 @@
+<!-- Crea una pagina HTML con tre div all'interno. Usa il CSS per impostare l'opacità del primo div al 60% quando il mouse ci passa sopra, del secondo div al 40% e del terzo div al 20%. -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Esercizio 10</title>
+    <style>
+        #div1 {
+            opacity: 1;
+            transition: opacity 0.3s;
+        }
+
+        #div1:hover {
+            opacity: 0.6;
+            background-color: lightblue;
+            width: 200px;
+            height: 100px;
+        }
+
+        #div2 {
+            opacity: 1;
+            transition: opacity 0.3s;
+        }
+
+        #div2:hover {
+            opacity: 0.4;
+            background-color: lightgreen;
+            width: 200px;
+            height: 100px;
+        }
+
+        #div3 {
+            opacity: 1;
+            transition: opacity 0.3s;
+        }
+
+        #div3:hover {
+            opacity: 0.2;
+            background-color: lightpink;
+            width: 200px;
+            height: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="div1">
+        Questo div ha un'opacità del 60% quando il mouse ci passa sopra.
+    </div>
+    <div id="div2">
+        Questo div ha un'opacità del 40% quando il mouse ci passa sopra.
+    </div>
+    <div id="div3">
+        Questo div ha un'opacità del 20% quando il mouse ci passa sopra.
+    </div>
+</body>
+
+</html>

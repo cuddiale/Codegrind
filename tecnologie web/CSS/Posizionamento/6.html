@@ -1,0 +1,36 @@
+<!-- Crea una pagina HTML con un div all'interno. Usa il CSS per impostare la posizione del div come "absolute" e posizionalo rispetto al suo contenitore (un altro div) con una distanza di 20px dal bordo superiore e 30px dal bordo sinistro. -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Esercizio 6</title>
+    <style>
+        #contenitore {
+            position: relative;
+            width: 300px;
+            height: 200px;
+            background-color: lightgreen;
+        }
+
+        #divAssoluto {
+            position: absolute;
+            top: 20px;
+            left: 30px;
+            width: 100px;
+            height: 100px;
+            background-color: lightpink;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="contenitore">
+        <div id="divAssoluto">
+            Questo div ha posizione "absolute" e si trova a 20px dal bordo superiore
+            e 30px dal bordo sinistro del contenitore.
+        </div>
+    </div>
+</body>
+
+</html>
