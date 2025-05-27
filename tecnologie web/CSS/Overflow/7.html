@@ -1,0 +1,26 @@
+<!-- Crea una pagina HTML con un paragrafo all'interno. Usa il CSS per fare in modo che il testo venga troncato e sostituito con puntini di sospensione quando supera le dimensioni del contenitore. -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Esercizio 7</title>
+    <style>
+        p {
+            width: 200px;
+            height: 50px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+    </style>
+</head>
+
+<body>
+    <p>
+        Questo è un paragrafo con un contenuto più lungo rispetto al contenitore e
+        il testo verrà troncato con puntini di sospensione.
+    </p>
+</body>
+
+</html>

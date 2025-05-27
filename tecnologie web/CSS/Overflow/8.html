@@ -1,0 +1,29 @@
+<!-- Crea una pagina HTML con un'immagine all'interno. Usa il CSS per fare in modo che l'immagine venga mostrata su più colonne quando supera le dimensioni del contenitore. -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Esercizio 8</title>
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            overflow: hidden;
+            column-count: 2;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <img src="image.jpg" alt="Immagine di esempio" />
+    </div>
+</body>
+
+</html>

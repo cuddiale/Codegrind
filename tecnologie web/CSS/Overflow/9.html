@@ -1,0 +1,25 @@
+<!-- Crea una pagina HTML con un paragrafo all'interno, il cui contenuto è più lungo del contenitore. Usa il CSS per fare in modo che il testo possa essere scritto verticalmente quando supera le dimensioni del contenitore. -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Esercizio 9</title>
+    <style>
+        p {
+            width: 100px;
+            height: 50px;
+            overflow: auto;
+            writing-mode: vertical-rl;
+        }
+    </style>
+</head>
+
+<body>
+    <p>
+        Questo è un paragrafo con un contenuto più lungo rispetto al contenitore e
+        il testo verrà scritto verticalmente.
+    </p>
+</body>
+
+</html>

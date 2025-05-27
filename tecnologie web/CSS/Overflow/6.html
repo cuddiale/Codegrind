@@ -1,0 +1,29 @@
+<!-- Crea una pagina HTML con un'immagine all'interno. Usa il CSS per fare in modo che l'immagine venga ridimensionata per adattarsi al contenitore, senza deformarsi. -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Esercizio 6</title>
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            overflow: hidden;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <img src="image.jpg" alt="Immagine di esempio" />
+    </div>
+</body>
+
+</html>

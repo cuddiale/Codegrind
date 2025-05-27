@@ -1,0 +1,46 @@
+<!-- Crea una pagina HTML con una griglia CSS di 3 colonne e 2 righe. Ogni cella della griglia deve contenere un paragrafo con del testo di esempio. -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Esercizio 1</title>
+    <style>
+        .grid-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: auto auto;
+            gap: 10px;
+        }
+
+        .grid-item {
+            padding: 10px;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="grid-container">
+        <div class="grid-item">
+            <p>Cella 1</p>
+        </div>
+        <div class="grid-item">
+            <p>Cella 2</p>
+        </div>
+        <div class="grid-item">
+            <p>Cella 3</p>
+        </div>
+        <div class="grid-item">
+            <p>Cella 4</p>
+        </div>
+        <div class="grid-item">
+            <p>Cella 5</p>
+        </div>
+        <div class="grid-item">
+            <p>Cella 6</p>
+        </div>
+    </div>
+</body>
+
+</html>
