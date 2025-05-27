@@ -1,0 +1,36 @@
+<!-- Crea una pagina HTML con un div all'interno. Usa il CSS per impostare la posizione del div come "fixed" e posizionalo rispetto al suo contenitore (un altro div) con una distanza di 10px dal bordo superiore e 20px dal bordo sinistro. -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Esercizio 7</title>
+    <style>
+        #contenitore {
+            position: relative;
+            width: 300px;
+            height: 200px;
+            background-color: lightblue;
+        }
+
+        #divFisso {
+            position: fixed;
+            top: 10px;
+            left: 20px;
+            width: 100px;
+            height: 100px;
+            background-color: lightyellow;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="contenitore">
+        <div id="divFisso">
+            Questo div ha posizione "fixed" e si trova a 10px dal bordo superiore e
+            20px dal bordo sinistro del contenitore.
+        </div>
+    </div>
+</body>
+
+</html>

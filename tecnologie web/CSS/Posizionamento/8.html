@@ -1,0 +1,36 @@
+<!-- Crea una pagina HTML con un div all'interno. Usa il CSS per impostare la posizione del div come "static" e posizionalo rispetto al suo contenitore (un altro div) con una distanza di 30px dal bordo superiore e 40px dal bordo sinistro. -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Esercizio 8</title>
+    <style>
+        #contenitore {
+            position: relative;
+            width: 300px;
+            height: 200px;
+            background-color: lightgreen;
+        }
+
+        #divStatico {
+            position: static;
+            top: 30px;
+            left: 40px;
+            width: 100px;
+            height: 100px;
+            background-color: lightpink;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="contenitore">
+        <div id="divStatico">
+            Questo div ha posizione "static" e la posizione non viene influenzata
+            dalle proprietà top e left.
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,36 @@
+<!-- Crea una pagina HTML con un div all'interno. Usa il CSS per impostare la posizione del div come "relative" e posizionalo rispetto al suo contenitore (un altro div) con una distanza di 20px dal bordo inferiore e 30px dal bordo destro. -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Esercizio 9</title>
+    <style>
+        #contenitore {
+            position: relative;
+            width: 300px;
+            height: 200px;
+            background-color: lightyellow;
+        }
+
+        #divRelativo {
+            position: relative;
+            bottom: 20px;
+            right: 30px;
+            width: 100px;
+            height: 100px;
+            background-color: lightblue;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="contenitore">
+        <div id="divRelativo">
+            Questo div ha posizione "relative" e si trova a 20px dal bordo inferiore
+            e 30px dal bordo destro del contenitore.
+        </div>
+    </div>
+</body>
+
+</html>

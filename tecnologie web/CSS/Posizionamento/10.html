@@ -1,0 +1,41 @@
+<!-- Crea una pagina HTML con un div all'interno. Usa il CSS per impostare la posizione del div come "sticky" e posizionalo rispetto al suo contenitore (un altro div) con una distanza di 50px dal bordo inferiore e 50px dal bordo destro. -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Esercizio 10</title>
+    <style>
+        #contenitore {
+            position: relative;
+            width: 300px;
+            height: 200px;
+            background-color: lightblue;
+            overflow: auto;
+        }
+
+        #divSticky {
+            position: sticky;
+            bottom: 50px;
+            right: 50px;
+            width: 100px;
+            height: 100px;
+            background-color: lightpink;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="contenitore">
+        <div style="height: 500px;">
+            Contenuto lungo per far apparire la barra di scorrimento.
+        </div>
+        <div id="divSticky">
+            Questo div ha posizione "sticky" e si trova a 50px dal bordo inferiore e
+            50px dal bordo destro del contenitore. Rimarrà visibile mentre si scorre
+            il contenuto.
+        </div>
+    </div>
+</body>
+
+</html>
