@@ -1,0 +1,37 @@
+<!-- Crea una pagina HTML con tre div all'interno. Usa il CSS per impostare il float del primo div come "left" e del secondo div come "right", in modo che il terzo div si posizioni tra di essi. Utilizza la proprietà "clear" per evitare che altri elementi si posizionino accanto al primo e al secondo div. -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Esercizio 10</title>
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+        }
+
+        #left {
+            float: left;
+            background-color: lightyellow;
+        }
+
+        #right {
+            float: right;
+            background-color: lightblue;
+        }
+
+        #middle {
+            clear: both;
+            background-color: lightgreen;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="left"></div>
+    <div id="right"></div>
+    <div id="middle"></div>
+</body>
+
+</html>
