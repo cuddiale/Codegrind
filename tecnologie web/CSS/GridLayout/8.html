@@ -1,0 +1,39 @@
+<!-- Crea una pagina HTML con una griglia CSS di 4 colonne. Imposta la griglia in modo che tutte le celle abbiano una spaziatura di 20 pixel. -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Esercizio 8</title>
+    <style>
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+
+        .grid-item {
+            padding: 10px;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="grid-container">
+        <div class="grid-item">
+            <p>Cella 1</p>
+        </div>
+        <div class="grid-item">
+            <p>Cella 2</p>
+        </div>
+        <div class="grid-item">
+            <p>Cella 3</p>
+        </div>
+        <div class="grid-item">
+            <p>Cella 4</p>
+        </div>
+    </div>
+</body>
+
+</html>

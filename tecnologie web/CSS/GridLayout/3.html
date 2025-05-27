@@ -1,0 +1,43 @@
+<!-- Crea una pagina HTML con una griglia CSS di 4 colonne. Imposta la larghezza della terza colonna in modo che sia due volte più larga rispetto alle altre colonne. -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Esercizio 3</title>
+    <style>
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+        }
+
+        .grid-item {
+            padding: 10px;
+            border: 1px solid black;
+        }
+
+        .grid-item:nth-child(3) {
+            grid-column: span 2;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="grid-container">
+        <div class="grid-item">
+            <p>Cella 1</p>
+        </div>
+        <div class="grid-item">
+            <p>Cella 2</p>
+        </div>
+        <div class="grid-item">
+            <p>Cella 3</p>
+        </div>
+        <div class="grid-item">
+            <p>Cella 4</p>
+        </div>
+    </div>
+</body>
+
+</html>

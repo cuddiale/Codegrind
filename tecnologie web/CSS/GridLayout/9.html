@@ -1,0 +1,46 @@
+<!-- Crea una pagina HTML con una griglia CSS di 5 colonne e 2 righe. Imposta la griglia in modo che tutte le colonne abbiano una larghezza fissa di 100 pixel e tutte le righe abbiano un'altezza fissa di 50 pixel. -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Esercizio 9</title>
+    <style>
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(5, 100px);
+            grid-template-rows: repeat(2, 50px);
+            gap: 10px;
+        }
+
+        .grid-item {
+            padding: 10px;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="grid-container">
+        <div class="grid-item">
+            <p>Cella 1</p>
+        </div>
+        <div class="grid-item">
+            <p>Cella 2</p>
+        </div>
+        <div class="grid-item">
+            <p>Cella 3</p>
+        </div>
+        <div class="grid-item">
+            <p>Cella 4</p>
+        </div>
+        <div class="grid-item">
+            <p>Cella 5</p>
+        </div>
+        <div class="grid-item">
+            <p>Cella 6</p>
+        </div>
+    </div>
+</body>
+
+</html>

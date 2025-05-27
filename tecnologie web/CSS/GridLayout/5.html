@@ -1,0 +1,47 @@
+<!-- Crea una pagina HTML con una griglia CSS di 5 colonne. Imposta la larghezza della quarta colonna in modo che sia fissa a 150 pixel, mentre il resto delle colonne si adatta in modo proporzionale. -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Esercizio 5</title>
+    <style>
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 10px;
+        }
+
+        .grid-item {
+            padding: 10px;
+            border: 1px solid black;
+        }
+
+        .grid-item:nth-child(4) {
+            grid-column: span 1;
+            width: 150px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="grid-container">
+        <div class="grid-item">
+            <p>Cella 1</p>
+        </div>
+        <div class="grid-item">
+            <p>Cella 2</p>
+        </div>
+        <div class="grid-item">
+            <p>Cella 3</p>
+        </div>
+        <div class="grid-item">
+            <p>Cella 4</p>
+        </div>
+        <div class="grid-item">
+            <p>Cella 5</p>
+        </div>
+    </div>
+</body>
+
+</html>

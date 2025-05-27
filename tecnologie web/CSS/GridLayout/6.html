@@ -1,0 +1,40 @@
+<!-- Crea una pagina HTML con una griglia CSS di 2 colonne e 2 righe. Imposta la seconda riga in modo che sia alta 200 pixel, mentre il resto delle righe si adatta in modo proporzionale. -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Esercizio 6</title>
+    <style>
+        .grid-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 200px;
+            gap: 10px;
+        }
+
+        .grid-item {
+            padding: 10px;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="grid-container">
+        <div class="grid-item">
+            <p>Cella 1</p>
+        </div>
+        <div class="grid-item">
+            <p>Cella 2</p>
+        </div>
+        <div class="grid-item">
+            <p>Cella 3</p>
+        </div>
+        <div class="grid-item">
+            <p>Cella 4</p>
+        </div>
+    </div>
+</body>
+
+</html>
