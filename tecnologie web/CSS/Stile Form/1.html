@@ -1,0 +1,24 @@
+<!-- Crea una pagina HTML con un campo di input di tipo testo. Usa il CSS per cambiare il colore del testo all'interno del campo di input in blu e impostare una larghezza del bordo di 2 pixel con colore rosso quando il campo di input ha il focus. -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Esercizio 1</title>
+    <style>
+        input[type="text"] {
+            color: blue;
+            border: 1px solid black;
+        }
+
+        input[type="text"]:focus {
+            border: 2px solid red;
+        }
+    </style>
+</head>
+
+<body>
+    <input type="text" placeholder="Inserisci il testo qui" />
+</body>
+
+</html>

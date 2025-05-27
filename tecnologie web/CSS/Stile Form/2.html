@@ -1,0 +1,23 @@
+<!-- Crea una pagina HTML con un campo di input di tipo password. Usa il CSS per cambiare il colore del testo all'interno del campo di input in verde quando il campo di input è stato compilato con un valore valido e in rosso quando il valore non è valido. -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Esercizio 2</title>
+    <style>
+        input[type="password"] {
+            color: red;
+        }
+
+        input[type="password"]:valid {
+            color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <input type="password" required placeholder="Inserisci la password" />
+</body>
+
+</html>
