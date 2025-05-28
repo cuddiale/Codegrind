@@ -1,0 +1,36 @@
+<!-- Crea una pagina HTML con un elemento che abbia un colore di sfondo rosso. Applica un'animazione CSS al colore di sfondo in modo che cambia gradualmente in blu e poi torna a rosso in un loop infinito. -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Esercizio 1</title>
+    <style>
+        .animation {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            animation: changeColor 2s infinite;
+        }
+
+        @keyframes changeColor {
+            0% {
+                background-color: red;
+            }
+
+            50% {
+                background-color: blue;
+            }
+
+            100% {
+                background-color: red;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="animation"></div>
+</body>
+
+</html>

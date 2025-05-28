@@ -1,0 +1,39 @@
+<!-- Crea una pagina HTML con un elemento di dimensioni 100x100 pixel e di colore verde. Applica un'animazione CSS alle dimensioni del div in modo che cambiano gradualmente a 150x150 pixel e poi tornano a 100x100 pixel in un loop infinito. -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Esercizio 2</title>
+    <style>
+        .animation {
+            width: 100px;
+            height: 100px;
+            background-color: green;
+            animation: changeSize 2s infinite;
+        }
+
+        @keyframes changeSize {
+            0% {
+                width: 100px;
+                height: 100px;
+            }
+
+            50% {
+                width: 150px;
+                height: 150px;
+            }
+
+            100% {
+                width: 100px;
+                height: 100px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="animation"></div>
+</body>
+
+</html>

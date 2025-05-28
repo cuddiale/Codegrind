@@ -1,0 +1,26 @@
+<!-- Crea una pagina HTML con un elemento di colore blu. Applica una transizione CSS al colore di sfondo in modo che cambia gradualmente in rosso quando il div ottiene il focus. -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Esercizio 3</title>
+    <style>
+        .transition {
+            background-color: blue;
+            transition: background-color 1s;
+        }
+
+        .transition:focus {
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div tabindex="0" class="transition">
+        Clicca qui per dare il focus e vedere la transizione del colore di sfondo.
+    </div>
+</body>
+
+</html>

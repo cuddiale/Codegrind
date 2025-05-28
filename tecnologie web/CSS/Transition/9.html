@@ -1,0 +1,31 @@
+<!-- Crea una pagina HTML con un elemento di colore blu. Applica una transizione CSS al colore di sfondo in modo che cambia gradualmente in rosso quando il mouse vi passa sopra e ritorna al blu quando il mouse esce dall'elemento. -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Esercizio 9</title>
+    <style>
+        .transition {
+            background-color: blue;
+            transition: background-color 1s;
+        }
+
+        .transition:hover {
+            background-color: red;
+        }
+
+        .transition:not(:hover) {
+            transition-delay: 1s;
+            background-color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="transition">
+        Passa il mouse qui per vedere la transizione del colore di sfondo.
+    </div>
+</body>
+
+</html>

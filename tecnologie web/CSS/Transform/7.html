@@ -1,0 +1,41 @@
+<!-- Crea una pagina HTML con un elemento di dimensioni 200x200 pixel e di colore magenta. Applica una trasformazione CSS al div in modo che sia ruotato di 60 gradi e scalato al 150% delle dimensioni originali. -->
+
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Div Trasformato</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+
+        .magenta-box {
+            width: 200px;
+            height: 200px;
+            background-color: magenta;
+            /* Applica le trasformazioni */
+            transform: rotate(60deg) scale(1.5);
+            /* Aggiungi una transizione per un effetto visivo */
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .magenta-box:hover {
+            /* Puoi aggiungere un effetto al passaggio del mouse se vuoi */
+            transform: rotate(90deg) scale(1.8);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="magenta-box"></div>
+</body>
+
+</html>

@@ -1,0 +1,28 @@
+<!-- Crea una pagina HTML con un elemento di dimensioni 150x150 pixel e di colore giallo. Applica una transizione CSS alle dimensioni e al colore di sfondo del div in modo che cambiano gradualmente a 200x200 pixel e verde quando il mouse vi passa sopra. -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Esercizio 4</title>
+    <style>
+        .transition {
+            width: 150px;
+            height: 150px;
+            background-color: yellow;
+            transition: width 1s, height 1s, background-color 1s;
+        }
+
+        .transition:hover {
+            width: 200px;
+            height: 200px;
+            background-color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="transition"></div>
+</body>
+
+</html>

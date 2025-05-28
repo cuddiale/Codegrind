@@ -1,0 +1,26 @@
+<!-- Crea una pagina HTML con un elemento di dimensioni 100x100 pixel e di colore ciano. Applica una transizione CSS alla rotazione del div in modo che ruota gradualmente di 45 gradi quando il mouse vi passa sopra. -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Esercizio 7</title>
+    <style>
+        .transition {
+            width: 100px;
+            height: 100px;
+            background-color: cyan;
+            transition: transform 1s;
+        }
+
+        .transition:hover {
+            transform: rotate(45deg);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="transition"></div>
+</body>
+
+</html>

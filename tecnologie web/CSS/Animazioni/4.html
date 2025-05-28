@@ -1,0 +1,42 @@
+<!-- Crea una pagina HTML con un elemento di dimensioni 150x150 pixel e di colore giallo. Applica un'animazione CSS alle dimensioni e al colore di sfondo del div in modo che cambiano gradualmente a 200x200 pixel e verde, e poi tornano a 150x150 pixel e giallo, in un loop infinito. -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Esercizio 4</title>
+    <style>
+        .animation {
+            width: 150px;
+            height: 150px;
+            background-color: yellow;
+            animation: changeSizeAndColor 2s infinite;
+        }
+
+        @keyframes changeSizeAndColor {
+            0% {
+                width: 150px;
+                height: 150px;
+                background-color: yellow;
+            }
+
+            50% {
+                width: 200px;
+                height: 200px;
+                background-color: green;
+            }
+
+            100% {
+                width: 150px;
+                height: 150px;
+                background-color: yellow;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="animation"></div>
+</body>
+
+</html>
