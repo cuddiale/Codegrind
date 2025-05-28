@@ -1,0 +1,25 @@
+<!-- Crea una pagina HTML con un'immagine. Applica un'istanza di media query CSS per ridurre le dimensioni dell'immagine a 50% della larghezza originale quando la larghezza della finestra del browser è inferiore a 800 pixel. -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Esercizio 2</title>
+    <style>
+        img {
+            width: 100%;
+        }
+
+        @media (max-width: 800px) {
+            img {
+                width: 50%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <img src="image.jpg" alt="Immagine di esempio" />
+</body>
+
+</html>

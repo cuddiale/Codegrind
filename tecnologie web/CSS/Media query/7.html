@@ -1,0 +1,25 @@
+<!-- Crea una pagina HTML con un'immagine. Applica un'istanza di media query CSS per nascondere l'immagine quando la larghezza della finestra del browser è inferiore a 768 pixel. -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Esercizio 7</title>
+    <style>
+        img {
+            display: block;
+        }
+
+        @media (max-width: 768px) {
+            img {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <img src="image.jpg" alt="Immagine di esempio" />
+</body>
+
+</html>

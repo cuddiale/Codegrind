@@ -1,0 +1,25 @@
+<!-- Crea una pagina HTML con un campo di input di tipo testo. Applica un'istanza di media query CSS per cambiare la dimensione del testo del campo di input a 16 pixel quando la larghezza della finestra del browser è inferiore a 600 pixel. -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Esercizio 5</title>
+    <style>
+        input[type="text"] {
+            font-size: 20px;
+        }
+
+        @media (max-width: 600px) {
+            input[type="text"] {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <input type="text" placeholder="Inserisci un testo" />
+</body>
+
+</html>

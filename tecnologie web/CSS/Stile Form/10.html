@@ -1,0 +1,32 @@
+<!-- Crea una pagina HTML con un campo di input di tipo submit (pulsante di invio). Usa il CSS per cambiare il colore del testo e dello sfondo del pulsante quando il mouse ci passa sopra (utilizza l'hover) e quando il pulsante è stato cliccato (utilizza l'active). -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Esercizio 10</title>
+    <style>
+        input[type="submit"] {
+            color: black;
+            background-color: white;
+            border: 1px solid black;
+            padding: 5px;
+        }
+
+        input[type="submit"]:hover {
+            color: white;
+            background-color: blue;
+        }
+
+        input[type="submit"]:active {
+            color: white;
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <input type="submit" value="Clicca qui" />
+</body>
+
+</html>

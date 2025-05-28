@@ -1,0 +1,25 @@
+<!-- Crea una pagina HTML con un campo di input di tipo testo. Applica un'istanza di media query CSS per cambiare il colore del bordo del campo di input in rosso quando la larghezza della finestra del browser è inferiore a 400 pixel. -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Esercizio 10</title>
+    <style>
+        input[type="text"] {
+            border: 1px solid black;
+        }
+
+        @media (max-width: 400px) {
+            input[type="text"] {
+                border: 1px solid red;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <input type="text" placeholder="Inserisci un testo" />
+</body>
+
+</html>
