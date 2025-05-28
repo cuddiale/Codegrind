@@ -1,0 +1,27 @@
+<!-- Crea una pagina HTML con una casella di controllo (checkbox) e un pulsante (button). Usa il CSS per cambiare il colore del testo del pulsante in bianco e il colore di sfondo in verde quando la casella di controllo è selezionata, altrimenti il pulsante deve essere disabilitato e il testo deve essere grigio. -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Esercizio 6</title>
+    <style>
+        input[type="checkbox"]:checked+button {
+            color: white;
+            background-color: green;
+        }
+
+        button:disabled {
+            color: grey;
+        }
+    </style>
+</head>
+
+<body>
+    <label>
+        <input type="checkbox" /> Seleziona la casella per abilitare il pulsante
+    </label>
+    <button disabled>Clicca qui</button>
+</body>
+
+</html>

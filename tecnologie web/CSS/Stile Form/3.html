@@ -1,0 +1,27 @@
+<!-- Crea una pagina HTML con un campo di input di tipo email. Usa il CSS per cambiare il colore del testo all'interno del campo di input in blu quando il campo di input ha il focus, e in grigio quando è disabilitato. -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Esercizio 3</title>
+    <style>
+        input[type="email"] {
+            color: grey;
+        }
+
+        input[type="email"]:focus {
+            color: blue;
+        }
+
+        input[type="email"]:disabled {
+            color: grey;
+        }
+    </style>
+</head>
+
+<body>
+    <input type="email" placeholder="Inserisci l'indirizzo email" disabled />
+</body>
+
+</html>

@@ -1,0 +1,23 @@
+<!-- Crea una pagina HTML con un campo di input di tipo numero. Usa il CSS per cambiare il colore del testo all'interno del campo di input in verde quando il valore è maggiore di 50 e in rosso quando è minore o uguale a 50. -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Esercizio 7</title>
+    <style>
+        input[type="number"] {
+            color: red;
+        }
+
+        input[type="number"]:valid {
+            color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <input type="number" min="1" max="100" placeholder="Inserisci un numero da 1 a 100" />
+</body>
+
+</html>

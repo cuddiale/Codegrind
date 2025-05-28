@@ -1,0 +1,28 @@
+<!-- Crea una pagina HTML con un campo di input di tipo radio. Usa il CSS per cambiare il colore del testo dei pulsanti di opzione (radio buttons) in blu quando sono selezionati. -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Esercizio 5</title>
+    <style>
+        input[type="radio"] {
+            color: black;
+        }
+
+        input[type="radio"]:checked {
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <label>
+        <input type="radio" name="opzione" value="opzione1" /> Opzione 1
+    </label>
+    <label>
+        <input type="radio" name="opzione" value="opzione2" /> Opzione 2
+    </label>
+</body>
+
+</html>
