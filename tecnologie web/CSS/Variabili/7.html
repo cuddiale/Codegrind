@@ -1,0 +1,25 @@
+<!-- Crea una variabile CSS per la larghezza del bordo di un elemento `div` e utilizzala per impostare lo stile del bordo. -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Esercizio 7</title>
+    <style>
+        :root {
+            --larghezza-bordo: 3px;
+        }
+
+        div {
+            width: 200px;
+            height: 100px;
+            border: var(--larghezza-bordo) solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <div>Questo è un div con bordo di larghezza variabile.</div>
+</body>
+
+</html>

@@ -1,0 +1,23 @@
+<!-- Crea una variabile CSS per il colore di sfondo di un link quando viene fatto clic su di esso e utilizzala per impostare lo stile del link cliccato. -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Esercizio 10</title>
+    <style>
+        :root {
+            --colore-sfondo-link-cliccato: lightcoral;
+        }
+
+        a:active {
+            background-color: var(--colore-sfondo-link-cliccato);
+        }
+    </style>
+</head>
+
+<body>
+    <a href="#">Clicca qui</a>
+</body>
+
+</html>

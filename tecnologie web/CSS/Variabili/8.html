@@ -1,0 +1,26 @@
+<!-- Crea una variabile CSS per il margine e il padding di un elemento `p` e utilizzale per impostare lo spazio intorno al paragrafo. -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Esercizio 8</title>
+    <style>
+        :root {
+            --margine-paragrafo: 20px;
+            --padding-paragrafo: 10px;
+        }
+
+        p {
+            margin: var(--margine-paragrafo);
+            padding: var(--padding-paragrafo);
+            background-color: lightpink;
+        }
+    </style>
+</head>
+
+<body>
+    <p>Questo è un paragrafo con spaziatura variabile.</p>
+</body>
+
+</html>

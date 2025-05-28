@@ -1,0 +1,30 @@
+<!-- Crea una variabile CSS per il colore di sfondo e il colore del testo di un elemento `a` e utilizzale per impostare lo stile del link. -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Esercizio 6</title>
+    <style>
+        :root {
+            --colore-sfondo-link: cyan;
+            --colore-testo-link: navy;
+        }
+
+        a {
+            background-color: var(--colore-sfondo-link);
+            color: var(--colore-testo-link);
+            text-decoration: none;
+            padding: 5px;
+            display: inline-block;
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <a href="#">Questo è un link con stile variabile</a>
+    <a href="#">Questo è un altro link</a>
+</body>
+
+</html>

@@ -1,0 +1,31 @@
+<!-- Crea una variabile CSS per il colore di sfondo e la dimensione del font di un paragrafo all'interno di un div e utilizzale per impostare lo stile del div e del paragrafo. -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Esercizio 9</title>
+    <style>
+        :root {
+            --colore-sfondo-div: lavender;
+            --dimensione-font-paragrafo: 20px;
+        }
+
+        div {
+            background-color: var(--colore-sfondo-div);
+            padding: 20px;
+        }
+
+        p {
+            font-size: var(--dimensione-font-paragrafo);
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <p>Questo è un paragrafo all'interno di un div con stile variabile.</p>
+    </div>
+</body>
+
+</html>
