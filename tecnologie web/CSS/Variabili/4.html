@@ -1,0 +1,26 @@
+<!-- Crea una variabile CSS per la larghezza e l'altezza di un div e utilizzale per impostare la larghezza e l'altezza del div. -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Esercizio 4</title>
+    <style>
+        :root {
+            --larghezza-div: 200px;
+            --altezza-div: 100px;
+        }
+
+        div {
+            width: var(--larghezza-div);
+            height: var(--altezza-div);
+            background-color: lightgreen;
+        }
+    </style>
+</head>
+
+<body>
+    <div>Questo è un div con larghezza e altezza variabili.</div>
+</body>
+
+</html>

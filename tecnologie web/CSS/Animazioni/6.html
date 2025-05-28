@@ -1,0 +1,35 @@
+<!-- Crea una pagina HTML con un elemento di dimensioni 200x100 pixel e di colore magenta. Applica un'animazione CSS alla posizione del div in modo che si sposta di 50 pixel verso destra quando il mouse vi passa sopra. -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Esercizio 6</title>
+    <style>
+        .animation {
+            width: 200px;
+            height: 100px;
+            background-color: magenta;
+        }
+
+        .animation:hover {
+            animation: moveRight 1s;
+        }
+
+        @keyframes moveRight {
+            0% {
+                transform: translateX(0);
+            }
+
+            100% {
+                transform: translateX(50px);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="animation"></div>
+</body>
+
+</html>

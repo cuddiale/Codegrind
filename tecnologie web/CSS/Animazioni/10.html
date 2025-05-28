@@ -1,0 +1,39 @@
+<!-- Crea una pagina HTML con un elemento di dimensioni 200x200 pixel e di colore giallo. Applica un'animazione CSS alle dimensioni del div in modo che cambiano gradualmente a 150x150 pixel quando il div ottiene il focus. -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Esercizio 10</title>
+    <style>
+        .animation {
+            width: 200px;
+            height: 200px;
+            background-color: yellow;
+        }
+
+        .animation:focus {
+            animation: changeSize 1s;
+        }
+
+        @keyframes changeSize {
+            0% {
+                width: 200px;
+                height: 200px;
+            }
+
+            100% {
+                width: 150px;
+                height: 150px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div tabindex="0" class="animation">
+        Clicca qui per dare il focus e vedere la transizione delle dimensioni.
+    </div>
+</body>
+
+</html>

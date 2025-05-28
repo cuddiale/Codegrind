@@ -1,0 +1,37 @@
+<!-- Crea una pagina HTML con un elemento di dimensioni 150x150 pixel e di colore verde. Applica un'animazione CSS alle dimensioni del div in modo che cambiano gradualmente a 200x100 pixel quando il mouse vi passa sopra. -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Esercizio 8</title>
+    <style>
+        .animation {
+            width: 150px;
+            height: 150px;
+            background-color: green;
+        }
+
+        .animation:hover {
+            animation: changeSize 1s;
+        }
+
+        @keyframes changeSize {
+            0% {
+                width: 150px;
+                height: 150px;
+            }
+
+            100% {
+                width: 200px;
+                height: 100px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="animation"></div>
+</body>
+
+</html>

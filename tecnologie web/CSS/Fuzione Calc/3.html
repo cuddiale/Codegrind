@@ -1,0 +1,35 @@
+<!-- Crea una pagina HTML con una lista non ordinata contenente diversi elementi. Utilizza la funzione calc() per impostare la larghezza di ogni elemento in modo che occupi il 20% della larghezza della lista. -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Esercizio 3</title>
+    <style>
+        ul {
+            width: 400px;
+            border: 1px solid black;
+            padding: 0;
+        }
+
+        li {
+            display: inline-block;
+            width: calc(20% - 4px);
+            /* 4px di margine tra gli elementi */
+            text-align: center;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li>Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+        <li>Elemento 4</li>
+        <li>Elemento 5</li>
+    </ul>
+</body>
+
+</html>
